@@ -1,0 +1,412 @@
+/* rgb(0,22,45)
+#00162d
+#001530
+rgb(0,21,48)
+*/
+
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   
+ }
+ body{
+  height:100vh;
+ }
+ .container-fluid{
+     width: 100%;
+    
+     background-color:rgb(0,22,45);
+   
+ }
+ .container-fluid .header{
+   padding-top: 10px;
+     width: 100%;
+     height: 9%;
+     background-color:rgb(0,22,45);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .container-fluid .header .header-item1 , .header-item2{
+     display: flex;
+     align-items: center;
+ }
+ .container-fluid .header .header-item1{
+ justify-content:flex-start;
+ width: 50%;
+ height: 100%;
+ padding-left: 4em;
+ }
+ .container-fluid .header .header-item1 .header-logo{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     margin-bottom: 5px;
+     box-shadow: 0 0 20px -5px white;
+ }
+ .container-fluid .header .header-item2{  
+     width: 50%;
+     height: 100%;
+    justify-content:flex-end;
+    padding-right: 2em;
+ }
+ .container-fluid .header .header-item2 .header-DayNight{
+width: 100px ;
+height:36px;
+background-color: rgb(207, 207, 207);
+margin-left:20px;
+margin-bottom: 5px;
+border-radius: 30px;
+ }
+ .container-fluid .header  a{
+     color: white;
+     margin-left: 2em;
+     font-size:15px;
+     font-weight: 300;
+     letter-spacing: 1.5px;
+ }
+ .container-fluid .header a:hover{
+     font-size: 17px;
+     border-bottom: 3px solid white;
+     transition: 0.5s;
+     margin-left: 1.5em;
+     cursor: pointer;
+ }
+ .container .body1 {
+    background-color:rgb(0,22,45);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .container .body1 .body1-NameLogo{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(0,22,45);
+    margin-bottom: 40px;
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing:5px;
+    font-size:22px;
+  }
+  .container .body1 .body1-NameLogo .earthimg{
+    width: 100px ;
+    height: 100px;
+    box-shadow: 0 0 40px -10px white;
+    border-radius: 50%;
+  }
+  .container .body1 .body1-AdvancedSearchBar{
+    width: 60%;
+    height: 40px;
+    background-color: rgb(236, 236, 236);
+   border-radius:7px ;
+   display: flex;
+   flex-direction: row;
+   justify-content:center ;
+   align-items: center;
+   position: relative;
+   margin-top:40px;
+   margin-bottom:50px;
+   box-shadow: 0 0 6px 0px rgb(243, 243, 243);
+  }
+  .container .body1 .body1-AdvancedSearchBar .AdvancedInputSearchDiv{
+    width: 50%;
+    height:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    transition: all 3s;
+    transition-delay: 2s;
+  }
+  .container .body1 .body1-AdvancedSearchBar .AdvancedInputSearchDiv input{
+    width: 94%;
+  height: 82%;
+  border: none;
+  box-shadow: 0px 0px 10px -5px black inset;
+  border-radius: 3px;
+  padding-left: 25px;
+  font-size: 17px;
+  background-color: rgba(15, 39, 65, 0.144);
+  color:rgb(0,22,45);
+  position: absolute;
+  left:12px;
+  }
+  .container .body1 .body1-AdvancedSearchBar .AdvancedInputSearchDiv input:focus{
+    outline:none;
+  }
+  .container .body1 .body1-AdvancedSearchBar .BasicButtonDiv{
+    width:25% ;
+    height: 100%;
+    border-left: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all 3s;
+    position: absolute;
+    right:220px ;
+  }
+  .container .body1 .body1-AdvancedSearchBar .BasicButtonDiv button{
+    height:30px;
+   width: 90%;
+    border: none;
+    background-color: rgb(15, 39, 65);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    margin: 7px;
+    cursor: pointer; 
+   
+  }
+  .container .body1 .body1-AdvancedSearchBar .BasicButtonDiv button:active{
+    box-shadow: 0 0 5px 0 rgb(255, 255, 255) inset;
+  }
+
+  .container .body1 .body1-AdvancedSearchBar .AdvancedButtonDiv{
+    width:25% ;
+    height: 100%;
+    border-left: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: all 3s;
+    transition-delay: 3s;
+   position: absolute;
+   right: 0px;
+  }
+  .container .body1 .body1-AdvancedSearchBar .AdvancedButtonDiv button {
+    height:30px;
+    width:90%;
+    border: none;
+    background-color: rgb(15, 39, 65);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 13px;
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    margin: 7px;
+    cursor: pointer; 
+   
+  }
+  .container .body1 .body1-AdvancedSearchBar .AdvancedButtonDiv button:active{
+    box-shadow: 0 0 5px 0 rgb(255, 255, 255) inset;
+  }
+  /* style of body2 */
+.container .body2{
+ height: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color:rgb(0,22,45);
+}
+.tab {
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+}
+ /* Style the buttons that are used to open the tab content */
+ .tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: rgb(224, 224, 224);
+  padding: 0px 16px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  font-size: 13px;
+  transition-property: font-size;
+  transition-duration: 0.6s;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgb(214, 214, 214);
+  text-decoration-style: solid;
+}
+/* style the tabcontent */
+.container .body3{
+  background-color: rgb(0,22,45);
+}
+.tabcontent {
+display: none;
+  text-align: center;
+  padding: 20px;
+  border-top: none;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.searchInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 400px;
+  position: relative;
+  width: 900px;
+  height: 450px;
+  margin: auto;
+  
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.inputBox input,textarea {
+  width: 97%;
+  padding-left:20px;
+  height: 28px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: rgb(214, 214, 214);
+  border-radius: 5px;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  transition: 0.5s;
+  
+}
+
+.inputBox span {
+  position: absolute;
+  left: 25px;
+  bottom: 1em;
+  padding-bottom: 17px;
+  padding-left: 5px;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: rgb(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+ .searchSummary{
+height: 100px;
+resize: none;
+padding: 5px;
+}
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
+  color: rgb(0, 0, 0);
+  transform: translateX(10px) translateY(-35px);
+  padding: 2px 10px;
+  font-size: 10px;
+  background: rgb(214, 214, 214);
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: rgb(0, 0, 0);
+  transform: translateX(10px) translateY(-35px);
+  padding: 2px 10px;
+  font-size: 10px;
+  background: rgb(214, 214, 214);
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  letter-spacing: 0.2em;
+}
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* the style of body4 and footer */
+  .container .body4{
+    width: 100%;
+    height: 325px;
+   
+  }
+  .container .body4 img{
+    width: 100%;
+    height: 100%;
+
+  }
+  .BA-Footer{
+    background-color:rgb(0,22,45);
+    width: 100%;
+    height: 20px;
+   border-top: 2px solid white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 10px;
+   color: #fff;
+   letter-spacing:1px;
+  }
+  .BA-Footer div{
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+   
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+ 
